@@ -9,7 +9,4 @@ upkit provides general-purpose tools for histogramming, plotting, and fitting da
 git clone https://github.com/yourusername/upkit.git
 cd upkit
 </pre>
-# Clone the repository
-git clone https://github.com/yourusername/upkit.git
-cd upkit
 
