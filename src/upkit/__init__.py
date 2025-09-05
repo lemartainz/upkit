@@ -24,12 +24,12 @@ Example
 """
 
 from .hipo_analysis import RootAnalysis
-from .hists import Histogram
-from .fit import Fitter
-import .tools 
+from .hists import Histo, Histo2D
+from .fit import Fit
+import tools 
 
 # Define the public API
-__all__ = ["RootAnalysis", "Histogram", "Fitter", "tools"]
+__all__ = ["RootAnalysis", "Histo", "Histo2D", "Fit", "tools"]
 
 # Package version
 __version__ = "0.1.0"
