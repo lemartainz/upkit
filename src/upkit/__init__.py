@@ -26,7 +26,7 @@ Example
 from .hipo_analysis import RootAnalysis
 from .hists import Histo, Histo2D
 from .fit import Fit
-import tools 
+from . import tools 
 
 # Define the public API
 __all__ = ["RootAnalysis", "Histo", "Histo2D", "Fit", "tools"]

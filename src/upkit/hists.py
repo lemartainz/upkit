@@ -10,8 +10,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy as sp
 import matplotlib as mpl
-import tools
-from fit import Fit
+from . import tools
+from .fit import Fit
 
 
 np.seterr(over='ignore', invalid='ignore', divide='ignore')

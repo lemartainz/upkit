@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import scipy as sp
-import tools
+from . import tools
 
 
 class Fit:
@@ -125,9 +125,9 @@ class Fit:
         self.cov = cov
         
         fit_info = (
-            f"A = {fit_params[0]:.2f} $\pm$ {param_errors[0]:.2f}\n"
-            f"$\mu$ = {fit_params[1]:.4f} $\pm$ {param_errors[1]:.4f}\n"
-            f"$\sigma$ = {fit_params[2]:.4f} $\pm$ {param_errors[2]:.4f}\n"
+            fr"A = {fit_params[0]:.2f} $\pm$ {param_errors[0]:.2f}\n"
+            fr"$\mu$ = {fit_params[1]:.4f} $\pm$ {param_errors[1]:.4f}\n"
+            fr"$\sigma$ = {fit_params[2]:.4f} $\pm$ {param_errors[2]:.4f}\n"
         )
 
         if signal is not None:
@@ -136,7 +136,7 @@ class Fit:
             self.yield_value = yield_value
             self.yield_uncertainty = yield_uncertainty 
 
-            fit_info += (f"Yield = {yield_value:.0f} $\pm$ {yield_uncertainty:.0f}")
+            fit_info += (fr"Yield = {yield_value:.0f} $\pm$ {yield_uncertainty:.0f}")
 
         # Plot the fit and data points
         x_fit = np.linspace(x_min, x_max, 10000)

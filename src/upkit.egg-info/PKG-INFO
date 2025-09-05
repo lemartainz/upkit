@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: upkit
+Version: 0.1.0
+Summary: A Pythonic ROOT analysis, plotting, and fitting library for nuclear/particle physics.
+Author-email: Leo Martinez <lmart470@fiu.edu>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.0
+Requires-Dist: scipy>=1.10
+Requires-Dist: matplotlib>=3.10
+Requires-Dist: iminuit>=2.17
+Requires-Dist: vector>=1.6
+Requires-Dist: uproot>=5.0
+Requires-Dist: pandas>=1.5
+Requires-Dist: awkward>=2.8
+Requires-Dist: h5py>=3.8
+Requires-Dist: numba>=0.58
+
+# upkit
+A Pythonic ROOT-style analysis, plotting, and fitting library for nuclear and particle physics.  
+
+**upkit** provides general-purpose tools for histogramming, plotting, and fitting data, designed to be flexible, robust, and easy to use for physics analyses.
+
+---
+
+## Features
+- ROOT-like histogramming and plotting with `matplotlib`
+- General-purpose fitting using `scipy` and `iminuit`
+- Fit quality metrics (χ², reduced χ², AIC)
+- High-energy physics friendly: integrates with `uproot`, `awkward`, and `vector`
+- Optimized performance with `numba`
+
+---
+conda 
+## Installation
+Running these commands on your terminal 
+### From GitHub
+```bash
+pip install git+https://github.com/lemartainz/upkit.git
+```
+
